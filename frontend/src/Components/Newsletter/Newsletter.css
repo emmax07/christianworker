@@ -1,0 +1,177 @@
+/* General Styles */
+.newsletter-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar default: vertical on left */
+.newsletter-sidebar {
+  margin-top: 1.8%;
+  margin-bottom: 3%;
+  background-color: #005eb8;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-sidebar h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.newsletter-year-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.newsletter-year-btn {
+  background-color: rgb(170, 168, 168);
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 60%;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.1s;
+}
+
+.newsletter-year-btn.active,
+.newsletter-year-btn:hover {
+  background-color: white;
+  color: #005eb8;
+}
+
+/* Calendar Grid */
+.calendar-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 72%;
+  margin: auto;
+  margin-top: 1.8%;
+  margin-bottom: 3%;
+}
+
+/* Calendar Card */
+.calendar-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  background-color: #ccc;
+}
+
+.calendar-card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.calendar-card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 10px 15px;
+  color: white;
+  background-color: #005eb8;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calendar-card h2:hover {
+  background-color: #0056b3;
+}
+
+.calendar-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
+  .newsletter-container {
+    flex-direction: column;
+  }
+
+  /* Sidebar moves to the top */
+  .newsletter-sidebar {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  /* Year buttons: 4 per row */
+  .newsletter-year-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .newsletter-year-btn {
+    width: 22%; /* 4 per row */
+    min-width: 100px;
+    margin: 5px; /* Add space between buttons */
+  }
+
+  /* Calendar container switches to 2 columns */
+  .calendar-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  /* Year buttons: maintain 4 per row */
+  .newsletter-year-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .newsletter-year-btn {
+    width: 22%; /* 4 per row */
+    min-width: 70px; /* Slightly smaller if needed */
+    margin: 5px; /* Add space between buttons */
+  }
+
+  /* Calendar container switches to 1 column */
+  .calendar-container {
+    grid-template-columns: 1fr;
+  }
+}

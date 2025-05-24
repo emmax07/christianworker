@@ -1,0 +1,178 @@
+/* Base Reset for Navbar only */
+.navbar * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar .nav-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar .nav-logo p a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.navbar .menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+/* Menu Styles */
+.navbar .nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-menu li {
+  position: relative;
+}
+
+.navbar .nav-menu li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-menu li a:hover {
+  color: #0077cc;
+}
+
+.navbar .nav-menu li hr {
+  margin-top: 4px;
+  border: none;
+  border-top: 2px solid #005eb8;
+  width: 100%;
+  animation: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Responsive Behavior */
+@media screen and (max-width: 768px) {
+  .navbar .menu-icon {
+    display: block;
+  }
+
+  .navbar .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar .nav-menu.active {
+    display: flex;
+  }
+
+  .navbar .nav-menu li {
+    width: 100%;
+  }
+
+  .navbar .nav-menu li a {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Media Query for 480px Screens */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar .nav-logo img {
+    height: 30px;
+  }
+
+  .navbar .nav-logo p a {
+    font-size: 1rem;
+  }
+
+  .navbar .menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    cursor: pointer;
+  }
+
+  .navbar .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+  }
+
+  .navbar .nav-menu.active {
+    display: flex;
+  }
+
+  .navbar .nav-menu li {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .navbar .nav-menu li a {
+    display: block;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    width: 100%;
+  }
+
+  .navbar .nav-menu li hr {
+    border-top: 2px solid #005eb8;
+    margin-top: 4px;
+  }
+}

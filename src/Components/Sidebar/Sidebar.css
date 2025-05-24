@@ -1,0 +1,132 @@
+/* Sidebar */
+.sidebar {
+  margin-top: 1.8%;
+  width: 250px;
+  background-color: #005eb8;
+  padding: 20px;
+  color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar h1,
+.sidebar h2 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  color: white;
+}
+
+.sidebar h1 {
+  font-size: 1.8rem; /* Ensure large size */
+}
+
+.sidebar h2 {
+  font-size: 1.2rem; /* Slightly smaller than h1 but still large */
+  font-weight: normal;
+}
+
+.sidebar hr {
+  border: 0;
+  height: 1px;
+  background: #fff;
+  margin: 20px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.sidebar-item.active,
+.sidebar-item:hover {
+  background-color: white;
+  color: #005eb8;
+}
+
+.sidebar-item a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Make sidebar list horizontal and wrap on small screens */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .sidebar-item {
+    width: calc(33.33% - 20px);
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  /* Keep h1 and h2 large */
+  .sidebar h1 {
+    font-size: 1.8rem;
+  }
+
+  .sidebar h2 {
+    font-size: 1.2rem;
+  }
+
+  .sidebar hr {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .sidebar-item {
+    width: calc(33.33% - 20px);
+    padding: 8px;
+  }
+
+  .sidebar-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+
+  .sidebar h1 {
+    font-size: 1.8rem;
+  }
+
+  .sidebar h2 {
+    font-size: 1.2rem;
+  }
+}

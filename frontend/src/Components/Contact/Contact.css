@@ -1,0 +1,134 @@
+/* Contact.css */
+.contact-container {
+  max-width: 30%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.contact-card h1 {
+  font-size: 2em;
+  color: #1c7ed6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info form {
+  width: 100%;
+}
+
+.success-message {
+  font-size: 1rem;
+  color: green;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-container,
+.message-container {
+  margin-bottom: 20px;
+}
+
+.input-container input,
+.message-container textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.message-container textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-info button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-info button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    max-width: 90%;
+    padding: 15px;
+    margin: 30px auto;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .contact-card h1 {
+    font-size: 1.6em;
+  }
+
+  .contact-info button {
+    font-size: 1.1em;
+    padding: 12px;
+  }
+
+  .input-container input,
+  .message-container textarea {
+    font-size: 0.95em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-container {
+    max-width: 95%;
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .contact-card {
+    padding: 15px;
+  }
+
+  .contact-card h1 {
+    font-size: 1.4em;
+  }
+
+  .contact-info button {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .input-container input,
+  .message-container textarea {
+    font-size: 0.9em;
+  }
+
+  .message-container textarea {
+    height: 120px;
+  }
+}

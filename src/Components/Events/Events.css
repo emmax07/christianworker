@@ -1,0 +1,182 @@
+.events-component {
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f4f8;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.events-title {
+  font-size: 34px;
+  text-align: center;
+  color: #1e3a5f;
+  margin-bottom: 30px;
+}
+
+.events-calendar-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.events-component .react-calendar {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+}
+
+/* === Month Navigation Bar === */
+.events-component .react-calendar__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.5);
+  user-select: none;
+}
+
+/* Month-Year label */
+.events-component .react-calendar__navigation__label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  flex-grow: 1;
+  text-align: center;
+  user-select: none;
+}
+
+/* Prev/Next buttons */
+.events-component .react-calendar__navigation button {
+  background-color: rgba(255 255 255 / 0.15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+  min-width: 70px;
+}
+
+/* Hover effect for buttons */
+.events-component .react-calendar__navigation button:hover {
+  background-color: white;
+  color: #2563eb;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+}
+
+/* Position Prev and Next buttons */
+.events-component
+  .react-calendar__navigation
+  button[aria-label="Previous Month"] {
+  order: 0;
+}
+
+.events-component .react-calendar__navigation button[aria-label="Next Month"] {
+  order: 2;
+}
+
+/* Weekday headers */
+.events-component .react-calendar__month-view__weekdays {
+  font-weight: bold;
+  color: #4b5563;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* Each day tile */
+.events-component .react-calendar__tile {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 10px;
+  transition: 0.2s all ease-in-out;
+  font-weight: 600;
+  color: black;
+  margin: 6px 4px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* Weekend day numbers in red */
+.events-component .react-calendar__month-view__days__day--weekend {
+  color: red;
+}
+
+/* Hover effect on day tiles */
+.events-component .react-calendar__tile:hover {
+  color: #003366;
+  background-color: #e6f0ff;
+  cursor: pointer;
+}
+
+/* Days with events */
+.events-component .events-has-event {
+  background-color: #49cf7c;
+  font-weight: bold;
+  border-radius: 10px;
+  color: black !important;
+}
+
+/* Selected day */
+.events-component .events-selected {
+  background-color: #0072ce;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white !important;
+}
+
+/* Subtitle below calendar */
+.events-subtitle {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #1e3a5f;
+  border-bottom: 2px solid #dce4ec;
+  padding-bottom: 5px;
+}
+
+.events-subtitle span {
+  color: #2563eb;
+}
+
+/* Event card styling */
+.event-card {
+  background: #ffffff;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-left: 6px solid #2563eb;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.event-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #1e3a5f;
+}
+
+.events-none {
+  font-style: italic;
+  color: #6b7280;
+}

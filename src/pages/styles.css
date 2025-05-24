@@ -1,0 +1,173 @@
+/* STYLING THE HOME PAGE */
+/* .homeSectionOne {
+  position: relative;
+  margin-top: 10%;
+  z-index: 1;
+  box-sizing: border-box;
+  height: 15%;
+  width: 100%;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+/* #myVideo {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+.homeDivOne {
+  width: 100%;
+}
+
+.home-container,
+.about-container {
+  width: 80%;
+  margin: 10% auto;
+}
+
+.home-container p,
+.about-container p {
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-family: Arial, Helvetica, sans-serif; */
+/* }  */
+
+/* Responsive Adjustments */
+/* @media (max-width: 768px) {
+  .about-container,
+  .churchdir-container,
+  .newsletter-container,
+  .devo-container,
+  .mission-container,
+  .contact-container {
+    width: 90%;
+    margin: 5%;
+    margin-top: 20%;
+  }
+
+  .home-container p,
+  .about-container p,
+  .mission-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+} */
+
+/* STYLING THE ABOUT PAGE */
+/* .about-container h2,
+.churchdir-container h2,
+.newsletter-container h2,
+.devo-container h2,
+.mission-container h2,
+.contact-container h2 {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #005eb8;
+  margin-top: 10%;
+}
+
+.about-container b {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #005eb8;
+} */
+
+/* Responsive About Page */
+/* @media (max-width: 768px) {
+  .about-container h2 {
+    font-size: 24px;
+  }
+
+  .about-container p,
+  .about-container b {
+    font-size: 18px;
+  }
+} */
+
+/* STYLING THE MISSION PAGE */
+/* .mission {
+  text-align: center;
+  padding: 20px;
+}
+
+.mission h1 {
+  font-size: 30px;
+  line-height: 2;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #005eb8;
+} */
+
+/* .mission p {
+  max-width: 800px;
+  font-size: 20px;
+  line-height: 2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+} */
+
+/* Responsive Mission Page */
+/* @media (max-width: 768px) {
+  .mission h1 {
+    font-size: 24px;
+  }
+
+  .mission p {
+    font-size: 18px;
+    width: 90%;
+  }
+} */
+
+/* Styles for the cards wrapper */
+/* .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: center;
+} */
+
+/* .card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; */
+/*  flex: 1 1 300px; Responsive width */
+/* max-width: 45%; */
+/* }
+
+.card h2 {
+  font-size: 24px;
+  color: #005eb8;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #494949;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+
+/* Responsive Cards */
+/* @media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+} */

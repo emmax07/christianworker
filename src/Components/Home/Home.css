@@ -1,0 +1,66 @@
+/* Home.css */
+
+.homeSectionOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.home-container {
+  max-width: 80%;
+  text-align: center;
+  margin-top: 3%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-container p {
+  font-size: 1.4rem;
+  color: #333333;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .homeSectionOne {
+    padding: 20px 10px;
+  }
+
+  .home-container p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeSectionOne {
+    padding: 15px 8px;
+    margin: 10px;
+    box-shadow: none;
+  }
+
+  .home-container {
+    max-width: 100%;
+    padding: 15px 10px;
+    box-shadow: none;
+  }
+
+  .home-container p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .homeDivOne {
+    margin-bottom: 15px;
+  }
+
+  #myVideo {
+    border-radius: 6px;
+  }
+}
