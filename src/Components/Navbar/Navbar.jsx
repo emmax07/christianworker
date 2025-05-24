@@ -38,7 +38,7 @@ const Navbar = () => {
 
       {/* Hamburger Menu for Small Screens */}
       <div className="menu-icon" onClick={toggleMenu}>
-        {isOpen ? "✖Menu" : "☰"} {/* Toggle between open and close icons */}
+        {isOpen ? "✖Menu" : "☰"}
       </div>
 
       {/* Navigation Links */}
