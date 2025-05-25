@@ -96,6 +96,7 @@
   text-align: center;
   color: white;
   z-index: 1;
+  width: 80%;
 }
 
 .calendar-card h2 {

@@ -8,6 +8,15 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.mission-container h1 {
+  text-align: center;
+  color: #1a4e9e;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
 .mission-container h2 {
   font-size: 2.2em;
   color: #005eb8;

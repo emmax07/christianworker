@@ -1,5 +1,3 @@
-/* ChurchDirectory.css */
-
 /* Main container */
 .main-container {
   display: flex;
@@ -178,15 +176,22 @@ button:hover {
   }
 
   .cards-container {
-    grid-template-columns: 1fr; /* 2 columns */
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
 
   .selected-card-container {
     margin-left: 0;
   }
 
-  .card-church {
+  .card-church,
+  .card.selected {
     height: auto;
     padding: 20px;
   }
@@ -228,11 +233,18 @@ button:hover {
   }
 
   .cards-container {
-    grid-template-columns: 1fr; /* 1 column for phones */
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 12px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
 
-  .card-church {
+  .card-church,
+  .card.selected {
     padding: 10px;
     height: auto;
   }
