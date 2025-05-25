@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import CWlogo from "../../assets/CWImage/CWlogo.png";
+import CWlogo from "../../assets/cwimage/cwlogo.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
