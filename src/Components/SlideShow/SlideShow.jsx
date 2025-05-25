@@ -1,16 +1,16 @@
 import { useEffect, useRef } from "react";
 import "./SlideShow.css";
 
-import CWImage1 from "../Assets/CWImage/CWImage1.png";
-import CWImage2 from "../Assets/CWImage/CWImage2.png";
-import CWImage3 from "../Assets/CWImage/CWImage3.png";
-import CWImage4 from "../Assets/CWImage/CWImage4.png";
-import CWImage5 from "../Assets/CWImage/CWImage5.png";
-import CWImage6 from "../Assets/CWImage/CWImage6.png";
-import CWImage7 from "../Assets/CWImage/CWImage7.png";
-import CWImage8 from "../Assets/CWImage/CWImage8.png";
-import CWImage9 from "../Assets/CWImage/CWImage9.png";
-import CWImage10 from "../Assets/CWImage/CWImage10.png";
+import CWImage1 from "../../assets/CWImage/CWImage1.png";
+import CWImage2 from "../../assets/CWImage/CWImage2.png";
+import CWImage3 from "../../assets/CWImage/CWImage3.png";
+import CWImage4 from "../../assets/CWImage/CWImage4.png";
+import CWImage5 from "../../assets/CWImage/CWImage5.png";
+import CWImage6 from "../../assets/CWImage/CWImage6.png";
+import CWImage7 from "../../assets/CWImage/CWImage7.png";
+import CWImage8 from "../../assets/CWImage/CWImage8.png";
+import CWImage9 from "../../assets/CWImage/CWImage9.png";
+import CWImage10 from "../../assets/CWImage/CWImage10.png";
 
 const images = [
   CWImage1,

@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import UnitedKingdom from "../Assets/CountryImage/UnitedKingdom.png";
-import England from "../Assets/CountryImage/England.png";
-import Scotland from "../Assets/CountryImage/Scotland.png";
-import Wales from "../Assets/CountryImage/Wales.png";
-import Isle_of_Man from "../Assets/CountryImage/Isle_of_Man.png";
-import Ireland from "../Assets/CountryImage/Ireland.png";
-import NorthernIreland from "../Assets/CountryImage/NorthernIreland.png";
+import UnitedKingdom from "../../assets/CountryImage/UnitedKingdom.png";
+import England from "../../assets/CountryImage/England.png";
+import Scotland from "../../assets/CountryImage/Scotland.png";
+import Wales from "../../assets/CountryImage/Wales.png";
+import Isle_of_Man from "../../assets/CountryImage/Isle_of_Man.png";
+import Ireland from "../../assets/CountryImage/Ireland.png";
+import NorthernIreland from "../../assets/CountryImage/NorthernIreland.png";
 import "./Sidebar.css";
 
 function Sidebar() {
