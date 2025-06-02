@@ -116,7 +116,7 @@ import Feb2025 from "../../assets/Years/2025/Images/February2025.png";
 import Mar2025 from "../../assets/Years/2025/Images/March2025.png";
 import Apr2025 from "../../assets/Years/2025/Images/April2025.png";
 import May2025 from "../../assets/Years/2025/Images/May2025.png";
-// import Jun2025 from "../../assets/Years/2025/Images/June2025.png";
+import Jun2025 from "../../assets/Years/2025/Images/June2025.png";
 // import Jul2025 from "../../assets/Years/2025/Images/July2025.png";
 // import Aug2025 from "../../assets/Years/2025/Images/August2025.png";
 // import Sep2025 from "../../assets/Years/2025/Images/September2025.png";
@@ -130,6 +130,7 @@ import CW_Feb2025 from "../../assets/Years/2025/PDFs/CW_February2025.pdf";
 import CW_Mar2025 from "../../assets/Years/2025/PDFs/CW_March2025.pdf";
 import CW_Apr2025 from "../../assets/Years/2025/PDFs/CW_April2025.pdf";
 import CW_May2025 from "../../assets/Years/2025/PDFs/CW_May2025.pdf";
+import CW_Jun2025 from "../../assets/Years/2025/PDFs/CW_June2025.pdf";
 
 export const imagesByYear = {
   2021: {
@@ -195,7 +196,7 @@ export const imagesByYear = {
     March: Mar2025,
     April: Apr2025,
     May: May2025,
-    // June: Jun2025,
+    June: Jun2025,
     // July: Jul2025,
     // August: Aug2025,
     // September: Sep2025,
@@ -272,7 +273,7 @@ export const pdfsByYear = {
     March: CW_Mar2025,
     April: CW_Apr2025,
     May: CW_May2025,
-    // June: CW_Jun2025,
+    June: CW_Jun2025,
     // July: CW_Jul2025,
     // August: CW_Aug2025,
     // September: CW_Sep2025,

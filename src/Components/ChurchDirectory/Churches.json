@@ -1115,5 +1115,17 @@
     "contacts": "David Dunn. dhdunn00@gmail.com (02891) 814076  07943809538",
     "website": "",
     "region": "Northern Ireland"
+  },
+  {
+    "church_id": 94,
+    "church_name": "ISLE OF MAN (Ramsey)",
+    "members": "Christians: 3",
+    "meetingplace": "Balleigh Mews, Ramsey. Isle of Man",
+    "postaddress": "isleofmanchurch@gmail.com",
+    "sundaymeetings": "10am",
+    "midweek": "Bible studies at request throughout week",
+    "contacts": "Nigel Wright 07624 355443 email isleofmanchurch@gmail.com",
+    "website": "https://www.facebook.com/IsleOfManChurchOfChrist/",
+    "region": "Isle of Man"
   }
 ]

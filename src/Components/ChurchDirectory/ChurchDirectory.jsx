@@ -48,7 +48,7 @@ function ChurchDirectory() {
         <div className="search-container">
           <input
             type="text"
-            placeholder="Search for a place"
+            placeholder="Search for a congregation"
             value={searchQuery}
             onChange={handleSearch}
             className="search-bar"
